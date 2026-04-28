@@ -31,8 +31,7 @@ function initTheme() {
     return;
   }
 
-  const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
-  applyTheme(prefersLight ? "light" : "dark");
+  applyTheme("dark");
 }
 
 themeToggle.addEventListener("click", () => {
